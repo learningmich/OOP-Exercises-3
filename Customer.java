@@ -1,20 +1,22 @@
-import java.util.*;
-
-public class Main
+public class Customer
 {
-	public static void main(String[] args)
-	{
-		System.out.println("Hello World!");
+  private String name;
 
-		Scanner input = new Scanner(System.in);
+    public Customer() {
 
-		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
+        name = "unassigned";
 
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
+    }
 
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
-	}
+    public String getName() {
+
+        return name;
+
+    }
+
+    public void setName (String customerName) {
+
+        name = customerName;
+
+    }
 }
